@@ -16,14 +16,18 @@ module.exports = function(grunt){
 //added to original copied text
                 jshint: {
                     options: {
-                    reporter: require('jshint-stylish'),
-                    esversion: 6
-                    },
-                    all: ['Grunfile.js', 'config/*.js']
-                    },
+                        reporter: require('jshint-stylish'),
+                        esversion: 6
+                        },
+                        all: ['Grunfile.js', 'config/*.js']
+                        },
         }
     });    
 };
+
+grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-contrib-nodemon');
+grunt.loadNpmTasks('grunt-env');
 
 grunt.loadNpmTasks('grunt-env');
 
