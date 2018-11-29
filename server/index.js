@@ -1,20 +1,11 @@
-var http = require ('http');
 var express = require ('express');
-var path = require ('path');
+var config = require ('./config/config');
 
 var app = express();
+var port = process.env.port || 3000;
 
-app.use(express.static(path.normalize(__dirname) + '/public'));
+require('./config.express')(app, config);
 
-app.use(function(req,res,next){
-    console.log('Request from ' + req.ip);
-    next();
-});
-
-app.get('/',function(req,res){
-    res.send('Hello World!');
-});
-
-app.get('/about', function(req,res){
-    console.log('about');
+require('http').createServer(app).listen(port, function (){
+    console.log("HTTP Server listening on port: %d, in %s mode", port,app.get('env'));
 });
