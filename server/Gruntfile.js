@@ -9,10 +9,18 @@ module.exports = function(grunt){
                 production: {
                     NODE_ENV : 'production'
                 },
-
+//added to original copied text
                 nodemon: {
                     dev: {script: 'index.js'}
-                }
+                },
+//added to original copied text
+                jshint: {
+                    options: {
+                    reporter: require('jshint-stylish'),
+                    esversion: 6
+                    },
+                    all: ['Grunfile.js', 'config/*.js']
+                    },
         }
     });    
 };
@@ -20,10 +28,14 @@ module.exports = function(grunt){
 grunt.loadNpmTasks('grunt-env');
 
 grunt.registerTask('default', [
-'env:dev'
+'env:dev',
+//added to original copied text
+'nodemon',
+'jshint'
 ]);
 
 grunt.registerTask('production', [
 'env:production',
+//added to original copied text
 'nodemon'
 ]);
