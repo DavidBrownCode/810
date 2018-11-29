@@ -12,3 +12,14 @@ module.exports = function(grunt){
         }
     });    
 };
+
+grunt.loadNpmTasks('grunt-env');
+
+grunt.registerTask('default', [
+'env:dev'
+]);
+
+grunt.registerTask('production', [
+'env:production',
+'nodemon'
+]);
