@@ -8,6 +8,10 @@ module.exports = function(grunt){
                 },
                 production: {
                     NODE_ENV : 'production'
+                },
+
+                nodemon: {
+                    dev: {script: 'index.js'}
                 }
         }
     });    
