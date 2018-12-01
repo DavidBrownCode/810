@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var bluebird = require('bluebird');
 var logger = require('./logger');
+var glob = require('glob');
 
 module.exports = function (app, config) {
     logger.log('info', "Loading Mongoose functionality");
