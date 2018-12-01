@@ -1,3 +1,5 @@
+var morgan = require('morgan');
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var bluebird = require('bluebird');
 var logger = require('./logger');
