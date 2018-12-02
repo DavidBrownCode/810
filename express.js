@@ -29,3 +29,12 @@ if(process.env.NODE_ENV !== 'test') {
         next();
     });
 };
+module.exports = function (app, config) {
+    logger.log('info', "Loading Mongoose functionality");
+    mongoose.Promise = bluebird;
+    mongoose.connect(config.db);
+    var db = mongoose.connection;
+    db.on('error', function () {
+    throw new Error('unable to connect to database at ' + config.db);
+    });
+};    
