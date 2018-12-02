@@ -1,0 +1,32 @@
+{
+  "name": "810",
+  "version": "1.0.0",
+  "description": "Recreating the class file structure now that I think I finally uinderstand what is going on in the class. 26NOV2018.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBrownCode/810.git"
+  },
+  "keywords": [
+    "810",
+    "solutions",
+    "in",
+    "web",
+    "development",
+    "david",
+    "brown"
+  ],
+  "author": "David Aaron Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBrownCode/810/issues"
+  },
+  "homepage": "https://github.com/DavidBrownCode/810#readme"
+}
