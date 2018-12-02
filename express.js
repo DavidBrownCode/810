@@ -21,11 +21,11 @@ if(process.env.NODE_ENV !== 'test') {
     mongoose.set('debug', true);
 
     mongoose.connection.once('open', function callback() {
-    logger.log('info', 'Mongoose connected to the database');
+        logger.log('info', 'Mongoose connected to the database');
     });
 
     app.use(function (req, res, next) {
-    logger.log('Request from ' + req.connection.remoteAddress + ' info');
-    next();
+        logger.log('Request from ' + req.connection.remoteAddress + ' info');
+        next();
     });
 };
