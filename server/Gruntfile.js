@@ -35,7 +35,7 @@ grunt.registerTask('default', [
 'env:dev',
 //added to original copied text
 'nodemon',
-'jshint'
+'jshint',
 ]);
 
 grunt.registerTask('production', [
