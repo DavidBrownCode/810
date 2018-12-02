@@ -8,7 +8,9 @@
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-nodemon": "^0.5.4",
-    "grunt-env": "^0.4.4"
+    "grunt-env": "^0.4.4",
+    "jshint": "^2.9.6",
+    "jshint-stylish": "^2.2.1"
   },
   "devDependencies": {},
   "scripts": {
