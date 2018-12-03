@@ -19,7 +19,7 @@ module.exports = function(grunt){
                         reporter: require('jshint-stylish'),
                         esversion: 6
                         },
-                        all: ['Grunfile.js', 'config/*.js']
+                        all: ['Gruntfile.js', 'config/*.js']
                         },
         }
     });    
