@@ -11,3 +11,21 @@ app.get('/', function(req, res){
 app.listen(app.get('port'), function(){
     console.log('Express start on http://localhost' + app.get('port'));
 });
+
+/* //////////////////////*/
+
+var express = require('express');
+var config = require('./config/config');
+
+var app = express();
+
+var port = process.env.port || 3000
+
+require('./config/express')(app, config);
+
+require('http').createServer(app).listen(port, function () {
+console.log("HTTP Server listening on port: %d, in %s mode", port, app.get('env'));
+});
+
+/*  /////////////////////  */
+
