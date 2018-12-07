@@ -1,4 +1,4 @@
-
+//Updates from expressrouting class notes
     var express = require('express'),
       router = express.Router(),
       logger = require('../../config/logger');
