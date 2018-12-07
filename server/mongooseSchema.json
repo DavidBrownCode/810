@@ -1,0 +1,27 @@
+var PersonSchema = new Schema({
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    institutionId: { type: Schema.Types.ObjectId, required: true, ref: 'Institution' },
+    courses: [{
+        courseNumber: { type: String, required: true },
+        courseName: { type: String, required: true },
+        courseDescription: { type: String }
+    }]
+});
+
+PersonSchema.pre('update', function() {
+    this.update({},{ $set: { dateModified: new Date() } });
+});
+
+/*populate
+The populate function of the Mongoose query language performs a join, embedding child documents
+in the parent documents*/
+
+query.populate({ path: 'institutionId', model: 'Institution', select: 'name postalCode active’})
+.exec( function(err, object){
+    if (err) {
+    res.status(500).json(err);
+} else {
+    res.status(200).json(object);
+}
+});
