@@ -1,0 +1,44 @@
+{
+  "name": "810",
+  "version": "1.0.0",
+  "description": "Recreating the class file structure now that I think I finally uinderstand what is going on in the class. 26NOV2018.",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "express": "^4.16.4",
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodemon": "^0.5.4",
+    "grunt-env": "^0.4.4",
+    "jshint": "^2.9.6",
+    "jshint-stylish": "^2.2.1",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1",
+    "node": "^11.2.0",
+    "nodemon": "^1.18.7",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBrownCode/810.git"
+  },
+  "keywords": [
+    "810",
+    "solutions",
+    "in",
+    "web",
+    "development",
+    "david",
+    "brown"
+  ],
+  "author": "David Aaron Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBrownCode/810/issues"
+  },
+  "homepage": "https://github.com/DavidBrownCode/810#readme"
+}
